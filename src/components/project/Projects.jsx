@@ -3,7 +3,7 @@ import { Box } from "@chakra-ui/react"
 const Projects = () => {
 
   return (
-    <Box>Skills</Box>
+    <Box>Skills test</Box>
   )
 }
 
