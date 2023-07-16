@@ -7,15 +7,18 @@ import Introduction from "./components/header/Introduction";
 const App = () => {
   return (
     <ChakraProvider>
-      <Routes>
+      {/* <Routes> */}
         {/* {indexRoutes.map((index,key) => {
           return (
             <Route path={index.path} key={key} />
           )
         })} */}
-        <Route path="/" element={<Navbar/>}/>
-        <Route path="/" element={<Introduction/>}/>
-      </Routes>
+        {/* <Route path="/" element={<Navbar type={"Main"}/>}/> */}
+        {/* <Route path="/" element={<Introduction/>}/> */}
+      {/* </Routes> */}
+
+      <Navbar/>
+      <Introduction/>
     </ChakraProvider>
   );
 };

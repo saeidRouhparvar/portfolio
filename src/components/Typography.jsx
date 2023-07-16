@@ -22,7 +22,7 @@ const TypographyWeb = ({
 })
 
 const TypographyMobile = ({
-    Heading_1_bold:{fontWeight: 700, fontSize: "40px", lineHeight: "54px", fontStyle: "normal",},
+    // Heading_1_bold:{fontWeight: 700, fontSize: "40px", lineHeight: "54px", fontStyle: "normal",},
     Heading_2_regular:{fontWeight: 400, fontSize: "32px", lineHeight: "44px", fontStyle: "normal",},
     Heading_2_bold:{fontWeight: 700, fontSize: "32px", lineHeight: "44px", fontStyle: "normal",},
     Heading_3_bold:{fontWeight: 700, fontSize: "28px", lineHeight: "40px", fontStyle: "normal",},
