@@ -4,14 +4,15 @@ import TypographyWeb from "../Typography";
 
 const Introduction = () => {
   return (
-    <Box textAlign={"left"}>
+    <Box>
       <Box
         w={"100%"}
         as={"img"}
         src={PortreBg}
-        position={"absolute"}
-        top={"-100px"}
-        right={"-100px"}
+        mt={"-250px"}
+        // position={"absolute"}
+        // top={"-100px"}
+        // right={"-100px"}
       ></Box>
       <Flex
         flexDirection={"column"}

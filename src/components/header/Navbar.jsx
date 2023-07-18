@@ -4,7 +4,7 @@ import Color from "../Color";
 import Setting from "./Setting";
 
 const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
 
@@ -26,7 +26,7 @@ const Navbar = () => {
             : Color.TextColor.Secondary_Dark
         }
       >
-        <Box>Blog</Box>
+        <Box >Blog</Box>
         <Box>Projects</Box>
       </Flex>
     </Flex>

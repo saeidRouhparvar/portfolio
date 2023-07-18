@@ -1,10 +1,10 @@
 import { Box,useColorMode } from '@chakra-ui/react'
 
 const Setting = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
-    <Box cursor={"pointer"} onClick={toggleColorMode}>
+    <Box>
     {colorMode === "light" ? (
       <Box p={"10px"}>
         <svg

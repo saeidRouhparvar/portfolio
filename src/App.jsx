@@ -3,6 +3,7 @@ import { Routes, Route} from "react-router-dom";
 import Navbar from "./components/header/Navbar";
 // import { indexRoutes } from "./routes";
 import Introduction from "./components/header/Introduction";
+import Projects from "./components/project/Projects";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
 
       <Navbar/>
       <Introduction/>
+      <Projects/>
     </ChakraProvider>
   );
 };
