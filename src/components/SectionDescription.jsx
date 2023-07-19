@@ -1,47 +1,48 @@
 import { Box, Flex, useColorMode } from "@chakra-ui/react";
-import Color from "../Color";
-import TypographyWeb from "../Typography";
+import Color from "./Color";
+import TypographyWeb from "./Typography";
 
 
-const ProjectsHeader = () => {
-  const { colormode } = useColorMode();
+const SectionDescription = ({title,description_1,description_2}) => {
+  const { colorMode } = useColorMode();
 
   return (
-    <Flex my={"96px"} justify={"space-around"}>
+    <Flex mb={"96px"} justify={"space-around"}>
   <Box
     {...TypographyWeb.Heading_1_medium}
     color={
-      colormode === "dark"
-        ? Color.TextColor.Primary_Dark
-        : Color.TextColor.Primary_Light
+      colorMode === "light"
+        ? Color.TextColor.Primary_Light 
+        : Color.TextColor.Primary_Dark
     }
   >
-    Projects
+    {title}
+    
   </Box>
   <Flex direction={"column"}>
     <Box
       {...TypographyWeb.SubHeading_regular}
       color={
-        colormode === "dark"
+        colorMode === "dark"
           ? Color.TextColor.Secondary_Dark
           : Color.TextColor.Secondary_Light
       }
     >
-      I’ve worked with start-ups and small companies, also I’ve
+      {description_1}
     </Box>
     <Box
       {...TypographyWeb.SubHeading_regular}
       color={
-        colormode === "dark"
+        colorMode === "dark"
           ? Color.TextColor.Secondary_Dark
           : Color.TextColor.Secondary_Light
       }
     >
-      created some mini app for my personal side projects.
+      {description_2}
     </Box>
   </Flex>
 </Flex>
   )
     }
 
-export default ProjectsHeader
+export default SectionDescription

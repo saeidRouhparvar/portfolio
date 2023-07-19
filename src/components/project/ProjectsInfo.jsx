@@ -8,7 +8,7 @@ const ProjectsInfo = ({title,description}) => {
       <Box {...TypographyWeb.Heading_3_medium}>{title}</Box>
       <Box {...TypographyWeb.Body_regular}>{description}</Box>
       <Flex mt={"24px"}>
-        <Button>aaa</Button>
+        <Button>Read About Project</Button>
         <Box>dfdsdf</Box>
       </Flex>
     </Flex>

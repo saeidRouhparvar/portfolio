@@ -10,9 +10,6 @@ const Introduction = () => {
         as={"img"}
         src={PortreBg}
         mt={"-250px"}
-        // position={"absolute"}
-        // top={"-100px"}
-        // right={"-100px"}
       ></Box>
       <Flex
         flexDirection={"column"}
@@ -21,11 +18,10 @@ const Introduction = () => {
         left={"50px"}
         gap={"10px"}
       >
+        <Box {...TypographyWeb.Heading_1_regular}>Hello,</Box>
         <Flex alignItems={"center"} gap={"10px"}>
-          <Box {...TypographyWeb.Heading_1_regular}>Hello, I’m</Box>
-          <Box {...TypographyWeb.Heading_1_bold}>
-            Saeid Rouhparvar,
-          </Box>
+          <Box {...TypographyWeb.Heading_1_regular}>I’m</Box>
+          <Box {...TypographyWeb.Heading_1_bold}>Saeid Rouhparvar,</Box>
         </Flex>
         <Flex alignItems={"center"} gap={"10px"}>
           <Box {...TypographyWeb.Heading_1_bold}> Front End</Box>

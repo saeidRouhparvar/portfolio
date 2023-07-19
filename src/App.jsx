@@ -4,6 +4,7 @@ import Navbar from "./components/header/Navbar";
 // import { indexRoutes } from "./routes";
 import Introduction from "./components/header/Introduction";
 import Projects from "./components/project/Projects";
+import Experiences from "./components/experience/Experiences";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Navbar/>
       <Introduction/>
       <Projects/>
+      <Experiences/>
     </ChakraProvider>
   );
 };

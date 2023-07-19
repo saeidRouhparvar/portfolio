@@ -1,10 +1,10 @@
-import { Box,useColorMode } from '@chakra-ui/react'
+import { Box,IconButton,useColorMode } from '@chakra-ui/react'
 
 const Setting = () => {
-  const { colorMode } = useColorMode();
+  const { colorMode,toggleColorMode } = useColorMode();
 
   return (
-    <Box>
+    <IconButton variant={"unstyled"} onClick={toggleColorMode}>
     {colorMode === "light" ? (
       <Box p={"10px"}>
         <svg
@@ -36,7 +36,7 @@ const Setting = () => {
         </svg>
       </Box>
     )}
-  </Box>
+  </IconButton>
   )
 }
 
