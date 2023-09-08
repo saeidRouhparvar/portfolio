@@ -1,7 +1,7 @@
 const ColorPrimary = {
   primary: "#F78F42",
   primary_focus: "#EA7C2B",
-  primary_content: "#FFFFFF",
+  primary_content: "#131313",
 };
 const ColorSecondary = {
   secondary: "rgba(2, 6, 23, 0.60)",
