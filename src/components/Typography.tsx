@@ -5,6 +5,7 @@ import { BoxProps } from "@chakra-ui/react"
 // }
 
 const Typography = ({
+    H1:{fontWeight: 600, fontSize: "48px", lineHeight: "56px", fontStyle: "normal",},
     h1_semiBold :{fontWeight: 600, fontSize: "36px", lineHeight: "40px", fontStyle: "normal",},
     h1_bold :{fontWeight: 700, fontSize: "36px", lineHeight: "32px", fontStyle: "normal",},
 
