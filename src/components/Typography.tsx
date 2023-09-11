@@ -18,7 +18,7 @@ const Typography = ({
     h4_semiBold :{fontWeight: 600, fontSize: "20px", lineHeight: "40px", fontStyle: "normal",},
     h4_bold :{fontWeight: 700, fontSize: "20px", lineHeight: "24px", fontStyle: "normal",},
 
-    h5_semiBold :{fontWeight: 600, fontSize: "18px", lineHeight: "40px", fontStyle: "normal",},
+    h5_semiBold :{fontWeight: 600, fontSize: "18px", lineHeight: "28px", fontStyle: "normal",},
     h5_bold :{fontWeight: 700, fontSize: "18px", lineHeight: "20px", fontStyle: "normal",},
 
     h6_semiBold :{fontWeight: 600, fontSize: "16px", lineHeight: "40px", fontStyle: "normal",},
