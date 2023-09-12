@@ -25,16 +25,23 @@ const SideBar = () => {
     );
   };
   return (
-    <Flex
+    <Box
+      display={{ base: "none", xl: "flex" }}
       pos={"sticky"}
       top={0}
       left={0}
+      h={"100vh"}
       borderRadius={"12px"}
       bg={colorMode === "light" ? Color.ColorBase.base_100 : ""}
-      direction={"column"}
+      flexDirection={"column"}
       p={pxToRem(24)}
       gap={pxToRem(24)}
-      overflow={"scroll"}
+      overflowX={"hidden"}
+      css={{
+        "&::-webkit-scrollbar": {
+          width: "1px",
+        },
+      }}
     >
       <SideHeader />
       <SideLink />
@@ -48,6 +55,9 @@ const SideBar = () => {
       <UnderLine />
 
       <Button
+        display={"flex"}
+        justifyContent={"space-between"}
+        alignItems={"center"}
         h={pxToRem(48)}
         {...Typography.b4_medium}
         rightIcon={CloudDownload}
@@ -56,7 +66,7 @@ const SideBar = () => {
       >
         Download My CV
       </Button>
-    </Flex>
+    </Box>
   );
 };
 
