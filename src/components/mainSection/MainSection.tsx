@@ -5,17 +5,29 @@ import RightSide from "../rightSide/RightSide";
 import { pxToRem } from "../Utils";
 import Services from "../services/Services";
 import Education from "../education/Education";
+import Experiences from "../experience/Experiences";
+import Portfolio from "../portfolio/Portfolio";
+import Testimonials from "../testimonials/Testimonials";
+import Blog from "../blog/Blog";
+import GetInTouch from "../getInTouch/GetInTouch";
+import Footer from "../footer/Footer";
 
 const MainSection = () => {
   return (
     <>
-      <Flex gap={pxToRem(32)}>
-        <Box flex={11}>
+      <Flex gap={{base:pxToRem(0),lg:pxToRem(20)}} >
+        <Flex direction={"column"} gap={pxToRem(112)} >
           <Introduction />
-          <Services/>
+         {/* <Services/> */}
           <Education/>
-        </Box>
-        <Box flex={1}>
+          <Experiences/>
+          <Portfolio/>
+          <Testimonials/>
+          <Blog/>
+          <GetInTouch/>
+          <Footer/> 
+        </Flex>
+        <Box >
           <RightSide />
         </Box>
       </Flex>
