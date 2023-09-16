@@ -16,9 +16,10 @@ const Navbar = () => {
       borderRadius={"80px"}
       py={pxToRem(12)}
       px={pxToRem(24)}
+      cursor={"pointer"}
     >
         <Box><Avatar w={pxToRem(36)} h={pxToRem(36)}/></Box>
-        <Flex align={"center"} gap={pxToRem(24)}>
+        <Flex align={"center"} gap={{base:pxToRem(12),md:pxToRem(24)}}>
             <Setting/>
             <BurgerMenu/>
         </Flex>
