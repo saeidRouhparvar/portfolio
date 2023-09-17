@@ -25,7 +25,10 @@ const MajorSkills = () => {
       </Box>
       {SkillsData.map((item: any) => (
         <Flex direction={"column"} gap={pxToRem(8)}>
-          <Box {...Typography.b5_medium}>{item.title}</Box>
+          <Flex justify={"space-between"} {...Typography.b5_medium}>
+            <Box >{item.title}</Box>
+            <Box opacity={"0.6"}>{item.percent + "%"}</Box>
+          </Flex>
           <Sliders value={item.percent} />
         </Flex>
       ))}
