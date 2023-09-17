@@ -1,4 +1,4 @@
-import { Flex, Box, useColorMode } from "@chakra-ui/react";
+import { Flex, Box, useColorMode, Select } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Color from "../Color";
 import { pxToRem } from "../Utils";
@@ -29,7 +29,12 @@ const RightSide = () => {
   const { colorMode } = useColorMode();
   const [active,setActive] = useState(false)
   return (
-    <Box display={{base:"none",xl:"flex"}}
+    <Box
+    pos={"sticky"}
+    top={pxToRem(32)}
+    left={0}
+    h={"100vh"}
+    display={{base:"none",xl:"flex"}}
       gap={pxToRem(32)}
       flexDirection={"column"}
       alignItems={"center"}
