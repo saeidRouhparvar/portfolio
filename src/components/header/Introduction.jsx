@@ -10,19 +10,27 @@ const Introduction = () => {
   return (
     <Flex
       borderRadius={"12px"}
-      bg={colorMode === "light" ? Color.ColorBase.base_100 : ""}
+      bg={colorMode === "light" ? Color.ColorBase.base_100 : Color.ColorBase.base_content}
       justify={"space-between"}
       w={{
-        base: pxToRem(320),
+        base: pxToRem(360),
         sm: pxToRem(476),
         md: pxToRem(640),
         lg: pxToRem(1020),
       }}
     >
-      <Box p={pxToRem(64)} {...Typography.H1}>
+      <Box p={{ lg: pxToRem(64), base: pxToRem(32) }} {...Typography.H1}>
         <Flex gap={3}>
-          I’m
-          <Box color={colorMode === "light" ? Color.ColorPrimary.primary : ""}>
+          <Box
+            color={
+              colorMode === "light"
+                ? Color.ColorBase.base_content
+                : Color.ColorBase.base_100
+            }
+          >
+            I’m
+          </Box>
+          <Box color={Color.ColorPrimary.primary}>
             Saeid Rouhparvar,
           </Box>
         </Flex>
@@ -32,7 +40,7 @@ const Introduction = () => {
           {...Typography.b3_regular}
           opacity={"0.6"}
           mt={pxToRem(24)}
-          textAlign={"justify"}
+          textAlign={"justifycenter"}
         >
           I have a background in information technology, with a focus on
           frontend development. I am the type of person who seizes every
@@ -44,21 +52,21 @@ const Introduction = () => {
         <Flex
           w={pxToRem(165)}
           px={pxToRem(6)}
-          bg={colorMode === "light" ? Color.ColorPrimary.primary : ""}
+          bg={Color.ColorPrimary.primary }
           align={"center"}
           justify={"space-between"}
           mt={pxToRem(32)}
           borderRadius={"56px"}
           cursor={"pointer"}
         >
-          <Box ps={pxToRem(24)} {...Typography.b3_medium}>
+          <Box color={Color.ColorBase.base_content} ps={pxToRem(24)} {...Typography.b3_medium}>
             Let’s Talk
           </Box>
           <Box
             my={pxToRem(6)}
             borderRadius={"50%"}
             p={2}
-            bg={colorMode === "light" ? Color.ColorPrimary.primary_content : ""}
+            bg={Color.ColorPrimary.primary_content}
           >
             {RightArrow}
           </Box>
