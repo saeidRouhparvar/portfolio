@@ -5,7 +5,7 @@ import Color from '../../components/Color'
 
  const MoreData = () => {
   return (
-    <Box borderBottom={"1px solid"} pb={2} w={"-webkit-fit-content"} {...Typography.b5_medium} color={Color.ColorPrimary.primary} >View Case Study</Box>
+    <Box cursor={"pointer"} borderBottom={"1px solid"} pb={2} w={"-webkit-fit-content"} {...Typography.b5_medium} color={Color.ColorPrimary.primary} >View Case Study</Box>
   )
 }
 export default MoreData
