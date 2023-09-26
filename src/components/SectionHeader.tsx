@@ -14,7 +14,7 @@ import Typography from './Typography'
     mb={pxToRem(48)}
   >
     <Box
-      color={colorMode === "light" ? Color.ColorBase.base_content : ""}
+      color={colorMode === "light" ? Color.ColorBase.base_content :  Color.ColorBase.base_100}
       {...Typography.h1_bold}
     >
      {title}
