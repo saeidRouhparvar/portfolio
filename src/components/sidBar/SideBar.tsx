@@ -28,7 +28,7 @@ const SideBar = () => {
     <Box
       display={{ base: "none", xl: "flex" }}
       pos={"sticky"}
-      top={0}
+      top={pxToRem(32)}
       left={0}
       h={"100vh"}
       borderRadius={"12px"}
