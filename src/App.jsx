@@ -10,6 +10,7 @@ import Services from "./pages/services/Services";
 import Project from "./pages/projects/Project";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
+import ProjectSinglePage from "./pages/projects/ProjectSinglePage";
 
 const App = () => {
   // const {colorMode} = useColorMode()
@@ -19,6 +20,7 @@ const App = () => {
     { path: "/about", element: <About /> },
     { path: "/services", element: <Services /> },
     { path: "/projects", element: <Project /> },
+    { path: "/projects/projectSinglePage/:id", element: <ProjectSinglePage /> },
     { path: "/blog", element: <Blog /> },
     { path: "/contact", element: <Contact /> },
   ]);
