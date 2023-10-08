@@ -5,6 +5,7 @@ import {
   Image,
   Flex,
   useColorMode,
+  BoxProps,
 } from "@chakra-ui/react";
 import React from "react";
 import { pxToRem } from "../Utils";
@@ -12,11 +13,18 @@ import Color from "../Color";
 import { MoreArrow } from "./MoreArrow";
 import Typography from "../Typography";
 
-const BlogCard = ({ img, title, description }) => {
+interface Interface extends BoxProps {
+  reset?:any
+  img?:any
+  title?:string
+  description?:string
+}
+
+const BlogCard = ({ img, title, description,...reset }:Interface) => {
   const { colorMode } = useColorMode();
   return (
-    <Card maxW={pxToRem(310)} h={pxToRem(400)}  mt={{base:"90px",sm:"0"}} _first={{marginTop:"0"}}>
-      <CardBody p={0}>
+    <Card {...reset} maxW={pxToRem(310)} h={pxToRem(400)}  mt={{base:"90px",sm:"0"}} _first={{marginTop:"0"}}>
+      <CardBody pb={pxToRem(90)}>
         <Image src={img} />
 
         <Flex direction={"column"} maxW={pxToRem(324)}>
