@@ -16,7 +16,7 @@ const App = () => {
   // const {colorMode} = useColorMode()
 
   let router = useRoutes([
-    { path: "/main", element: <MainSection /> },
+    { path: "/", element: <MainSection /> },
     { path: "/about", element: <About /> },
     { path: "/services", element: <Services /> },
     { path: "/projects", element: <Project /> },
