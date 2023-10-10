@@ -6,6 +6,9 @@ import Blog_1 from "../../assets/img/blog_1.svg";
 import Blog_2 from "../../assets/img/blog_2.svg";
 import Blog_3 from "../../assets/img/blog_3.svg";
 import { pxToRem } from "../../components/Utils";
+import Button from "../../components/button/Button";
+import Typography from "../../components/Typography";
+import Color from "../../components/Color";
 
 const BlogData = [
   {
@@ -63,13 +66,36 @@ const Blog = () => {
         gap={pxToRem(24)}
       >
         {BlogData.map((item: any) => (
-          <BlogCard 
+          <BlogCard
             description={item.description}
             img={item.img}
             title={item.title}
           />
         ))}
       </SimpleGrid>
+      <Flex justify={"center"} mb={pxToRem(128)}>
+        <Button w={pxToRem(187)} children={"Explore More"} />
+      </Flex>
+        <Box mb={pxToRem(128)} p={"8px 12px"} bg={Color.ColorPrimary.primary}  {...Typography.b3_regular}>
+          • Lorem ipsum dolor sit amet • consectetur adipiscing elit • sed do
+          eiusmod tempor incididunt ut • labore et dolore magna aliqua • Ut enim
+        </Box>
+
+        <Flex direction={"column"} justify={"center"} align={"center"} gap={pxToRem(64)}>
+          <Flex direction={"column"} align={"center"} gap={pxToRem(32)}>
+            <Box {...Typography.H1}>Let’s Work Together</Box>
+            <Button w={pxToRem(179)} children={"Get Started"}/>
+          </Flex>
+          <Box h={"1px"} bg={Color.ColorPrimary.primary_content}/>
+          <Flex justify={"space-between"}>
+            <Flex direction={"column"} gap={pxToRem(12)}>
+              
+            </Flex>
+            <Flex direction={"column"} gap={pxToRem(12)}>d</Flex>
+            <Flex direction={"column"} gap={pxToRem(12)}>d</Flex>
+            <Flex direction={"column"} gap={pxToRem(12)}>d</Flex>
+          </Flex>
+        </Flex>
     </Flex>
   );
 };
