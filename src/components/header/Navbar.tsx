@@ -26,7 +26,7 @@ const Navbar = () => {
       <Box {...Typography.b4_regular} alignItems={"center"}
       display={{ base: "none", xl: "flex" }}
       gap={pxToRem(32)}>
-        <Link to={'/app'}>Home</Link>
+        <Link to={'/'}>Home</Link>
         <Link to={'/about'}>About</Link>
         <Link to={'/services'}>Services</Link>
         <Link to={'/projects'}>Projects</Link>
