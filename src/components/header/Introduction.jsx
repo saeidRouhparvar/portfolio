@@ -4,13 +4,18 @@ import { pxToRem } from "../Utils";
 import Typography from "../Typography";
 import { RightArrow } from "../Svg";
 import main from "../../assets/img/main.png";
+import Button from "../button/Button";
 
 const Introduction = () => {
   const { colorMode } = useColorMode();
   return (
     <Flex
       borderRadius={"12px"}
-      bg={colorMode === "light" ? Color.ColorBase.base_100 : Color.ColorBase.base_content}
+      bg={
+        colorMode === "light"
+          ? Color.ColorBase.base_100
+          : Color.ColorBase.base_content
+      }
       justify={"space-between"}
       w={{
         base: pxToRem(360),
@@ -30,9 +35,7 @@ const Introduction = () => {
           >
             I’m
           </Box>
-          <Box color={Color.ColorPrimary.primary}>
-            Saeid Rouhparvar,
-          </Box>
+          <Box color={Color.ColorPrimary.primary}>Saeid Rouhparvar,</Box>
         </Flex>
         <Box>Front End Developer</Box>
         <Box> based in Iran.</Box>
@@ -49,28 +52,7 @@ const Introduction = () => {
           experience.
         </Box>
 
-        <Flex
-          w={pxToRem(165)}
-          px={pxToRem(6)}
-          bg={Color.ColorPrimary.primary }
-          align={"center"}
-          justify={"space-between"}
-          mt={pxToRem(32)}
-          borderRadius={"56px"}
-          cursor={"pointer"}
-        >
-          <Box color={Color.ColorBase.base_content} ps={pxToRem(24)} {...Typography.b3_medium}>
-            Let’s Talk
-          </Box>
-          <Box
-            my={pxToRem(6)}
-            borderRadius={"50%"}
-            p={2}
-            bg={Color.ColorPrimary.primary_content}
-          >
-            {RightArrow}
-          </Box>
-        </Flex>
+        <Button w={pxToRem(165)} children={"Let’s Talk"} />
       </Box>
 
       <Box
