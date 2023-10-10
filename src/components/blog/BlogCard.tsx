@@ -23,8 +23,8 @@ interface Interface extends BoxProps {
 const BlogCard = ({ img, title, description,...reset }:Interface) => {
   const { colorMode } = useColorMode();
   return (
-    <Card {...reset} maxW={pxToRem(310)} h={pxToRem(400)}  mt={{base:"90px",sm:"0"}} _first={{marginTop:"0"}}>
-      <CardBody pb={pxToRem(90)}>
+    <Card {...reset}  maxW={pxToRem(310)} mt={{base:"90px",sm:"0"}} _first={{marginTop:"0"}}>
+      <CardBody>
         <Image src={img} />
 
         <Flex direction={"column"} maxW={pxToRem(324)}>
@@ -42,7 +42,7 @@ const BlogCard = ({ img, title, description,...reset }:Interface) => {
             <Box {...Typography.b4_regular} opacity={"0.6"} mb={pxToRem(16)}>
               {description}
             </Box>
-            <MoreArrow />
+            <MoreArrow/>
           </Flex>
         </Flex>
       </CardBody>
