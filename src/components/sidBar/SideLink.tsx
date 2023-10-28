@@ -23,7 +23,7 @@ const SideLink = () => {
   return (
     <Flex gap={pxToRem(24)} p={pxToRem(12)}>
       {SocialMedia.map((item: any) => (
-        <Box cursor={"pointer"}>{item.Icon}</Box>
+        <Box key={item.id} cursor={"pointer"}>{item.Icon}</Box>
       ))}
     </Flex>
   );
