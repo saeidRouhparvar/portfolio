@@ -10,7 +10,6 @@ import Portfolio from "../portfolio/Portfolio";
 import Testimonials from "../testimonials/Testimonials";
 import Blog from "../blog/Blog";
 import GetInTouch from "../getInTouch/GetInTouch";
-import Footer from "../footer/Footer";
 
 const MainSection = () => {
   return (
@@ -25,11 +24,10 @@ const MainSection = () => {
           <Testimonials/>
           <Blog/>
           <GetInTouch/>
-          <Footer/> 
         </Flex>
-        <Box >
+        {/* <Box >
           <RightSide />
-        </Box>
+        </Box> */}
       </Flex>
     </>
   );
