@@ -53,19 +53,6 @@ const SideBar = () => {
 
       <ExtraSkill />
       <UnderLine />
-
-      <Button
-        display={"flex"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
-        h={pxToRem(48)}
-        {...Typography.b4_medium}
-        rightIcon={CloudDownload}
-        bg={colorMode === "light" ? Color.ColorPrimary.primary : ""}
-        color={colorMode === "light" ? Color.ColorBase.base_content : ""}
-      >
-        Download My CV
-      </Button>
     </Box>
   );
 };
