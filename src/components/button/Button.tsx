@@ -2,7 +2,7 @@ import { Box, BoxProps, Button as ChakraButton, Flex } from "@chakra-ui/react";
 import { pxToRem } from "../Utils";
 import Color from "../Color";
 import Typography from "../Typography";
-import { RightArrow } from "../Svg";
+import { CloudDownload, RightArrow } from "../Svg";
 
 interface Interface extends BoxProps {
   reset?: any;
@@ -30,7 +30,7 @@ const Button = ({ children, ...reset }: Interface) => {
             p={2}
             bg={Color.ColorPrimary.primary_content}
           >
-            {RightArrow}
+            {CloudDownload}
           </Box>
         </Flex>
   )
