@@ -2,9 +2,9 @@ import { Box, Flex, useColorMode } from "@chakra-ui/react";
 import Color from "../Color";
 import { pxToRem } from "../Utils";
 import Typography from "../Typography";
-import { RightArrow } from "../Svg";
 import main from "../../assets/img/main.png";
 import Button from "../button/Button";
+import ExportToPDF from "../ExportToPdf";
 
 const Introduction = () => {
   const { colorMode } = useColorMode();
@@ -51,8 +51,10 @@ const Introduction = () => {
           From there, I’m under pressure to learn quickly and gain a lot of new
           experience.
         </Box>
+          <Button w={pxToRem(220)} children={"Download My CV"} >
+        <ExportToPDF data={"Download My CV"}/>
 
-        <Button w={pxToRem(165)} children={"Let’s Talk"} />
+          </Button>
       </Box>
 
       <Box
