@@ -1,8 +1,11 @@
 import React from 'react'
+import GetInTouch from '../../components/getInTouch/GetInTouch'
 
  const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+    <GetInTouch/>
+    </>
   )
 }
 export default Contact
